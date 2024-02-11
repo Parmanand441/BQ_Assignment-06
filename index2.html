@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment6</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="mydiv">Color Revert.</div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const Div = document.getElementById("mydiv");
+
+    Div.addEventListener("mouseenter", function() {
+      Div.style.backgroundColor = "blue";
+    });
+
+    Div.addEventListener("mouseleave", function() {
+      Div.style.backgroundColor = "";
+    });
+  });
+    </script>
+
+</body>
+</html>
